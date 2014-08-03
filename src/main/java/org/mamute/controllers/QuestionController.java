@@ -98,6 +98,7 @@ public class QuestionController {
 	@IncludeAllTags
 	@CustomBrutauthRules(LoggedRule.class)
 	public void questionForm() {
+        result.include("isAsk", true);
 	}
 	
 	@Get

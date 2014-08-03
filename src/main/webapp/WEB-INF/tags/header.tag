@@ -32,10 +32,13 @@
 	<link rel="stylesheet" href="<c:url value="/css/responsive-mamute.css"/>">
 	<link rel="stylesheet" href="<c:url value="/css/deps/pickadate/classic.css"/>">
 	<link rel="stylesheet" href="<c:url value="/css/deps/pickadate/classic.date.css"/>">
+
+	<link rel="stylesheet" href="<c:url value="/css/metro-bootstrap.min.css"/>">
 	<link rel="stylesheet" href="<c:url value="/css/deps/custom.css"/>">
 </c:if>
 <c:if test="${environment.name == 'production'}" >
 	<link rel="stylesheet" href="<c:url value="/css/all-${deployTimestamp}.css"/>">
+	<link rel="stylesheet" href="<c:url value="/css/metro-bootstrap.min.css"/>">
 	<link rel="stylesheet" href="<c:url value="/css/deps/custom.css"/>">
 </c:if>
 

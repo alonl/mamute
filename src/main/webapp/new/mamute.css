@@ -969,6 +969,7 @@ textarea {
 }
 
 .second-header,.search-form {
+	line-height: 31px;
 }
 
 .second-header {
@@ -977,7 +978,7 @@ textarea {
 }
 
 .second-header,.second-header a {
-	color: #aabbaa;
+	color: #FFF;
 }
 
 .user-area {
@@ -995,6 +996,8 @@ textarea {
 }
 
 .search-form {
+	width: 25%;
+	margin-top: .3%;
 	float: right;
 }
 
@@ -1009,6 +1012,7 @@ textarea {
 	border-left: 1px solid #ccc;
 	width: 100%;
 	background-color: #fff;
+	height: 22px;
 }
 
 .search-form input[type="submit"] {
@@ -1081,7 +1085,7 @@ textarea {
 }
 
 .nav-item .current {
-	color: white;
+	background-color: #F89948;
 }
 
 .nav-item {

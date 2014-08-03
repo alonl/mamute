@@ -1,0 +1,166 @@
+diff --git a/webapp/index.html b/webapp/index.html
+index 1790af3..4ee7b83 100644
+--- a/webapp/index.html
++++ b/webapp/index.html
+@@ -14,9 +14,6 @@
+ 	<meta property="og:type" content="website">
+ 	<meta property="og:image" content='http://mysight.elasticbeanstalk.com/imgs/logo-fb.png'>
+ 
+-
+-
+-
+ 	<link rel="stylesheet" href="/css/reset.css">
+ 	
+ 	<link rel="stylesheet" href="/css/deps/fontello.css">
+@@ -31,10 +28,14 @@
+ 	<link rel="stylesheet" href="/css/responsive-mamute.css">
+ 	<link rel="stylesheet" href="/css/deps/pickadate/classic.css">
+ 	<link rel="stylesheet" href="/css/deps/pickadate/classic.date.css">
++	
++
++	<link rel="stylesheet" href="/css/metro-bootstrap.min.css">
+ 	<link rel="stylesheet" href="/css/deps/custom.css">
+ 
+ 
+ 
++
+ <!--[if lt IE 9]>
+ 	<script src="/js/deps/html5shiv.js"></script>
+ <![endif]-->
+@@ -54,35 +55,26 @@
+ <header class="header clear">
+ 
+ 	<section class="first-header">
+-		<div class="container header-container">
+-			<a class="logo big-logo sprite"
+-				href="/">Mamute</a>
++		<div class="container header-container big-logo-height">
++			<a class="logo big-logo sprite" href="/">Mamute</a>
+ 			<nav class="nav main-nav piped-nav">
+ 				<ul class="nav-items">
+ 					<li class="nav-item">
+-						<a class="button current" href="/">
+-							Questions
+-						</a>
+-					</li>
+-					<li class="nav-item menu-unanswered">
+-						<a class="button unanswered " href="/unanswered">
+-							Unanswered
+-						</a>
+-					</li>
+-					<li class="nav-item menu-rank">
+-						<a class="button " href="/ranking">
+-							Users
+-						</a>
+-					</li>
+-					<li class="nav-item">
+-						<a class="button " href="/news">
+-							News
+-						</a>
++						<h2 class="new-header">Become the best ambassador</h2>
+ 					</li>
+-					<li class="ask nav-item">
+-						<a class="button ask-a-question" href='/ask'>
+-							Ask Question
+-						</a>
++					<li class="ask nav-item metro">
++						<div class="main-menu-wrapper" style="display: inline-block; text-align: right">
++			                <ul class="horizontal-menu nlm">
++			                    <li class="place-right" style="width: 200px">
++			                        <a href="#" class="dropdown-toggle">Alon Lavi <span class="reputation" >(11)</span></a>
++			                        <ul class="dropdown-menu place-right" data-show="hover">
++			                            <li><a href="#">profile</a></li>
++			                            <li><a href="#">invite others</a></li>
++			                            <li><a href="#">sign out</a></li>
++			                        </ul>
++			                    </li>
++			                </ul>
++			            </div>
+ 					</li>
+ 				</ul>
+ 			</nav>
+@@ -94,53 +86,31 @@
+ 			<section class="user-area">
+ 				<nav class="nav">
+ 					<ul class="nav-items">
+-						
+-						
+-							<li class="nav-item user-item">
+-								
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-<a class="user-name"  href="/users/1002/alon-lavi">
+-	<img class="user-image menu-user-image" src="http://www.gravatar.com/avatar/74933a08f0ca658cc1352fe98b740b03.png?r=PG&size=32x32&d=http%3A%2F%2Frobohash.org%2Fsize_32x32%2Fset_set1%2Fbgset_any%2F74933a08f0ca658cc1352fe98b740b03.png"/>
+-	
+-		
+-		
+-			Alon Lavi
+-		
+-		
+-	
+-	<span class="reputation" >(11)</span>
+-</a>
+-							</li>
+-							
+ 							
+ 							<li class="nav-item">
+ 								<a class="logout" href="/logout">
+-									Sign out
++									Questions
+ 								</a>
+ 							</li>
+ 						
+ 						<li class="nav-item">
+ 							<a class="about" href="/about">
+-								About
++								Unanswered
++							</a>
++						</li>
++						<li class="nav-item">
++							<a class="about" href="/ask">
++								Ask
+ 							</a>
+ 						</li>
+ 						
+-							<li class="nav-item">
+-								<a class="intro new-users" href="#">Help!</a>
+-							</li>
++						<!-- <li class="nav-item">
++							<a class="intro new-users" href="#">Help!</a>
++						</li> -->
+ 						
+ 						<li class="nav-item">
+ 							<a href="#"	class="search-dropdown dropdown-trigger"
+-							data-target-id="dropdown-search-form">Procurar</a>
++							data-target-id="dropdown-search-form">Search</a>
+ 						</li>
+ 
+ 					</ul>
+@@ -1491,6 +1461,9 @@
+ 
+ 
+ <script src="/js/deps/jquery.js"></script>
++<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
++<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
++<script src="js/metro/metro.min.js"></script>
+ 
+ <script type="text/javascript">
+ 	//UI flags (GLOBAL VARIABLES)
+@@ -1553,9 +1526,6 @@
+ 	<script src="/js/approve-news.js"></script>
+ 	<script src="/js/ban-user.js"></script>
+ 
+-
+-
+-
+ <script type="text/javascript">
+ 
+ // fix context path of ajax requests *cool* 

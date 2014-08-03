@@ -1,0 +1,52 @@
+h2.new-header {
+	font-size: 30px;
+}
+
+.big-logo-height {
+	overflow: visible;
+}
+
+.new-search-form {
+	vertical-align: middle;
+	float: right;
+}
+.simplebox {
+  outline: none;
+  border:none !important;
+  box-shadow:none !important;
+}
+.btn {
+	border: none;
+}
+.btn:hover {
+	background-color: #ffffff;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+	background-color: #ffffff;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+	outline: none;
+}
+.btn:active, .btn.active {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+a.hover {
+	text-decoration: underline !important;
+	border-bottom: 1px solid #587d99;
+}
+.new-button {
+	padding-right: 0px;
+}
+.metro .horizontal-menu li {
+	margin-right: 0;
+}
+.user-area .nav-item a {
+	font-size: 1.4em;
+}
+.metro * {
+	color: #587d99;
+}
+.metro.search-form {
+    text-align: right;
+}
