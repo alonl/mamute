@@ -44,9 +44,69 @@ a.hover {
 .user-area .nav-item a {
 	font-size: 1.4em;
 }
+.user-area .nav-item a:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
 .metro * {
 	color: #587d99;
 }
+.metro a {
+    color: #587d99;
+}
+.metro a:hover {
+    color: #587d99;
+}
 .metro.search-form {
     text-align: right;
+}
+.metro .input-control.text {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 28px;
+}
+.second-header > * {
+    line-height: 10px;
+}
+.second-header .nav {
+    line-height: 26px;
+}
+.tabs a {
+    font-size: 20px;
+}
+.tabs a.selected {
+    font-size: 20px;
+    text-decoration: underline;
+}
+.tabs a.selected.recent-tags {
+    text-decoration: none;
+}
+.tabs a {
+    font-size: 20px;
+}
+.post-item {
+    width: 100%;
+}
+.metro .horizontal-menu a.dropdown-toggle:hover + .dropdown-menu.new[data-show="hover"] {
+    right: 70px;
+    display: block;
+}
+.metro .horizontal-menu .dropdown-menu.new[data-show="hover"]:hover {
+    right: 70px;
+    display: block;
+}
+.footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footer.dark-footer {
+    border-top: 4px solid #587d99;
+    background-color: #ffffff;
+}
+.footer-menu a {
+    color: #587d99;
+    font-size: 20px;
+}
+.tabs.tabs-tag {
+    float: right;
 }

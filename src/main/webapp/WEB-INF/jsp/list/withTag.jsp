@@ -17,5 +17,5 @@
 	<tags:questionList recentTags="${recentTags}" 
 		questions="${questions}" title="${}" unansweredTagLinks="${unansweredTagLinks}"/>
 </section>
-<tags:sideBar recentTags="${recentTags}" />
+
 <tags:joyrideIntro />

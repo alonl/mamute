@@ -1,7 +1,5 @@
 <fmt:message key="site.name" var="siteName"/>
 
-<fmt:message key="metas.home.title" var="title"/>
-
 <fmt:message key="metas.default.description" var="description">
 	<fmt:param value="${siteName}" />
 </fmt:message>
@@ -11,8 +9,6 @@
 </fmt:message>
 
 <tags:header facebookMetas="${true}" title="${genericTitle} - ${title}" description="${description}"/>
-
-<fmt:message key="menu.questions" var="title"/>
 
 <c:if test="${!currentUser.loggedIn}">
 	<section class="about-banner">
@@ -49,5 +45,3 @@
 	<tags:questionList recentTags="${recentTags}" questions="${questions}" title="${title}" tabs="${tabs}"/>
 </section>
 <tags:joyrideIntro />
-
-<tags:sideBar recentTags="${recentTags}" />

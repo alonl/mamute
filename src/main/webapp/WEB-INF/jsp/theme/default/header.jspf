@@ -22,7 +22,7 @@
                             <ul class="horizontal-menu nlm">
                                 <c:if test="${!currentUser.loggedIn}">
                                     <li class="place-right" style="width: 200px">
-                                         class="login" href="${linkTo[AuthController].loginForm(currentUrl)}">
+                                         <a class="login" href="${linkTo[AuthController].loginForm(currentUrl)}">
                                             <fmt:message key="auth.login_form_link" />
                                         </a>
                                     </li>

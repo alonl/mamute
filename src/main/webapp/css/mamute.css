@@ -953,7 +953,7 @@ textarea {
 
 /*HEADER*/
 .header {
-	margin-bottom: 2.5em;
+	margin-bottom: 0.5em;
 	height: 9em;
 }
 
@@ -1016,7 +1016,7 @@ textarea {
 	width: 15%;
 }
 
-.dropdown-target .search-form  .text-input {
+.dropdown-target .umamsearch-form  .text-input {
 	width: 85%;
 }
 
@@ -1127,7 +1127,7 @@ a.button.ask-a-question:hover {
 }
 
 .first-content {
-	width: 71%;
+	/*width: 71%;*/
 }
 
 .sidebar {
@@ -1376,24 +1376,15 @@ a.button.ask-a-question:hover {
 }
 
 .tabs a {
-	color: #777;
-	font-size: 0.9em;
 	padding: 5px 10px 13px 10px;
 }
 
 .tabs a:hover {
-	border: 1px solid #eaeaea;
-	padding: 5px 9px 8px 9px;
-	border-bottom-color: #fff;
-	text-decoration: none;
+	color: #587d99;
 }
 
 .tabs a.selected {
-	color: #000;
-	font-size: 110%;
-	border: 1px solid #eaeaea;
-	padding: 12px 9px 8px 9px;
-	border-bottom-color: #fff;
+	color: #587d99;
 }
 
 .tabs-tag {
@@ -2799,7 +2790,7 @@ h2.new-header {
 	-webkit-box-shadow: none;
 }
 a.hover {
-	text-decoration: underline !important;
+	text-decoration: underline;
 	border-bottom: 1px solid #587d99;
 }
 .new-button {

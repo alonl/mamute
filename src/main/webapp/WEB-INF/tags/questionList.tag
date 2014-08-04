@@ -10,7 +10,7 @@
 <%@attribute name="tabs" type="java.util.List" required="false"%>
 
 <tags:rssTagHeader unansweredTagLinks="${unansweredTagLinks}" tag="${tag}" 
-					title ="${title}" showTabs="${not empty tabs}"/>
+					title ="${title}" showTabs="${not empty tabs}" recentTags="${recentTags}"/>
 <c:if test="${not empty tag}">
 	<tags:tagTabs tag="${tag}" hasAbout="${hasAbout}"/>
 </c:if>

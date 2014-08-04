@@ -5,12 +5,13 @@
 <%@attribute type="java.lang.String" name="title" required="false"%>
 <%@attribute name="unansweredTagLinks" type="java.lang.Boolean" required="false"%>
 <%@attribute name="showTabs" type="java.lang.Boolean" required="false"%>
+<%@attribute name="recentTags" type="java.util.List" required="true"%>
 
 <c:if test="${empty unansweredTagLinks}">
 	<c:set value="${false}" var="unansweredTagLinks" />
 </c:if>
 
-<div class="subheader">
+
 	<c:if test="${unansweredTagLinks}">
 		<tags:brutal-include value="headerTagsWithNoAnswer"/>
 	</c:if>
@@ -24,10 +25,21 @@
 		</c:if>
 	</c:if>
 	<c:if test="${not empty tabs}">
-		<tags:tabs title="${title}" useSubheader="${false}">
-			<c:forEach var="tab" items="${tabs}">
-				<a href="${linkTo[ListController].top(tab)}"><fmt:message key="menu.top.${tab}"/></a>
-			</c:forEach>
-		</tags:tabs>
+        <div class="metro">
+            <div class="main-menu-wrapper">
+                <div class="horizontal-menu">
+                    <tags:tabs title="${title}" useSubheader="${false}">
+                        <c:forEach var="tab" items="${tabs}">
+                            <a href="${linkTo[ListController].top(tab)}"><fmt:message key="menu.top.${tab}"/></a>
+                        </c:forEach>
+                        <a class="dropdown-toggle recent-tags">
+                            recent tags
+                        </a>
+                        <ul class="dropdown-menu new place-right" data-show="hover">
+                            <tags:recentTagsUsage2 tagsUsage="${recentTags}"/>
+                        </ul>
+                    </tags:tabs>
+                </div>
+            </div>
+        </div>
 	</c:if>
-</div>

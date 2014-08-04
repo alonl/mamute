@@ -7,18 +7,10 @@
 <fmt:message key="site.name" var="siteName"/>
 <footer class="footer dark-footer">
 	<div class="container">
-		<div class="footer-muted-message">
-			${siteName}
-		</div>
 		<span class="footer-menu">
-			<a href="${linkTo[ListController].unsolved}" class="unsolved-link"><fmt:message key="menu.unsolved"/></a>
-			<a href="${linkTo[ListController].unanswered}"><fmt:message	key="menu.unanswered"/></a>
-		</span>
-		<span class="footer-vraptor">
-			Powered by: <a href="http://www.vraptor.org/"><fmt:message key="footer.vraptor" /></a>
-			and <a href="http://www.mamute.org/"><fmt:message key="footer.mamute" /></a>
-		</span>
-		<span class="footer-muted-message">
+			<a href="/share">share</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="/how">how it works</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="/about">about</a>
 		</span>
 	</div>
 </footer>

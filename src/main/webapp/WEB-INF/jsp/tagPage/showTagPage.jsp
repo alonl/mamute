@@ -12,7 +12,7 @@
 <tags:header facebookMetas="${true}" title="${genericTitle} - ${tagPage.tagName}" description="${description}"/>
 
 <section class="first-content content">
-	<tags:rssTagHeader tag="${tagPage.tag}"/>
+	<tags:rssTagHeader tag="${tagPage.tag}" recentTags="${recentQuestionTags}"/>
 	
 	<tags:tagTabs tag="${tagPage.tag}" hasAbout="${hasAbout}"/>
 
