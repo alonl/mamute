@@ -10,37 +10,6 @@
 
 <tags:header facebookMetas="${true}" title="${genericTitle} - ${title}" description="${description}"/>
 
-<c:if test="${!currentUser.loggedIn}">
-	<section class="about-banner">
-		<span class="minimize-banner icon-minus"></span>
-		<div class="about-content tell-me-more">
-			<h3 class="about-title title">
-				<fmt:message key="about.home_banner.welcome">
-					<fmt:param value="${siteName}" />
-				</fmt:message>
-			</h3>
-			<div class="about-text">
-				<fmt:message key="about.home_banner.text">
-					<fmt:param value="${siteName}" />
-				</fmt:message>
-			</div>
-			<a href="${linkTo[NavigationController].about}">
-				<fmt:message key="about.home_banner.text.link">
-					<fmt:param value="${siteName}" />
-				</fmt:message>
-			</a>
-		</div>
-		<div class="about-content how-it-works">
-			<ul>
-				<tags:howItWorksItem icon="icon-comment" key="about.home_banner.how_it_works.anyone_ask"/>
-				<tags:howItWorksItem icon="icon-chat-empty" key="about.home_banner.how_it_works.anyone_answer"/>
-				<tags:howItWorksItem icon="icon-users" key="about.home_banner.how_it_works.answers_raise_up"/>
-			</ul> 
-		</div>
-	</section>
-</c:if>
-
-
 <section class="first-content content">
 	<tags:questionList recentTags="${recentTags}" questions="${questions}" title="${title}" tabs="${tabs}"/>
 </section>

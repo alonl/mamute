@@ -9,6 +9,10 @@
 
 <div id="search-results"></div>
 
+<div class="after-search">
+    Did not find your question? Ask now.
+</div>
+
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">
 	google.load("search", "1");

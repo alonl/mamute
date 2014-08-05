@@ -21,6 +21,9 @@ h2.new-header {
 .btn:hover {
 	background-color: #ffffff;
 }
+.metro .recent-tags.dropdown-toggle:after {
+    content: '';
+}
 .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
 	background-color: #ffffff;
 }
@@ -85,6 +88,7 @@ a.hover {
     font-size: 20px;
 }
 .post-item {
+    padding-bottom: 1.6em;
     width: 100%;
 }
 .metro .horizontal-menu a.dropdown-toggle:hover + .dropdown-menu.new[data-show="hover"] {
@@ -94,10 +98,6 @@ a.hover {
 .metro .horizontal-menu .dropdown-menu.new[data-show="hover"]:hover {
     right: 70px;
     display: block;
-}
-.footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 .footer.dark-footer {
     border-top: 4px solid #587d99;
@@ -109,4 +109,43 @@ a.hover {
 }
 .tabs.tabs-tag {
     float: right;
+}
+li.post-item.question-item:last-child {
+    border-bottom: 0px;
+}
+.summary.question-summary ul > li > a.tag-brutal {
+    font-size: 1.1em;
+}
+.summary.question-summary .post-simple-information {
+    font-size: 1.1em;
+}
+title.item-title.main-thread-title.question-title {
+    margin-bottom: 0;
+}
+
+.first-content .page-item a {
+	border: 0;
+	color: #587d99;
+	background-color: #ffffff;
+	font-size: 1.6em;
+}
+
+.first-content .page-item:hover a {
+	background-color: #ffffff;
+	text-decoration: underline;
+}
+
+.first-content .current a {
+	font-weight: normal;
+	background-color: #ffffff;
+	text-decoration: underline;
+}
+body > .container {
+    padding-bottom: 2em;
+}
+.after-search {
+    background-color: #587d99;
+    font-size: 20px;
+    padding: 10px 0 10px 0;
+    color: #ffffff;
 }

@@ -986,7 +986,7 @@ textarea {
 }
 
 .user-area .nav {
-	width: 75%;
+	/*width: 75%;*/
 	float: left;
 }
 
@@ -1973,9 +1973,9 @@ px
 	/* border-top: 8px solid #000000; */
 	background-color: #244B6A;
 	height: auto;
-	margin-top: 50px;
+	/*margin-top: 15px;*/
 	text-align: center;
-	padding-top: 2em;
+	padding-top: 0.2em;
 }
 
 .footer-caelum {
@@ -1993,11 +1993,6 @@ px
 
 .footer-menu-label {
 	margin-right: .3em;
-}
-
-.footer-menu a {
-	color: #fff;
-	font-weight: bold;
 }
 
 .footer-menu
@@ -2079,10 +2074,10 @@ em
 	padding: 0 0 15px;
 }
 
-.footer.dark-footer {
+/*.footer.dark-footer {
 	background-color: #383938;
 	padding: 2em 0;
-}
+}*/
 
 .footer .main-tags:before {
 	display: block;
@@ -2420,7 +2415,7 @@ em
 }
 
 .page-item a {
-	border: 1px solid #ADC2D0;;
+	border: 1px solid #ADC2D0;
 	color: #3E6D8E;
 	padding: 0.5em;
 	display: block;
@@ -2718,7 +2713,7 @@ em
 }
 
 .title.item-title {
-	margin-bottom: 1.3em;
+	margin-bottom: 0;
 }
 
 .moderator-text {
