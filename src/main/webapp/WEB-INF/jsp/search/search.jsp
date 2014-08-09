@@ -10,7 +10,9 @@
 <div id="search-results"></div>
 
 <div class="after-search">
-    Did not find your question? Ask now.
+    <div class="container">
+        Did not find your question? <a href='${linkTo[QuestionController].newQuestion}'>Ask now</a>.
+    </div>
 </div>
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>

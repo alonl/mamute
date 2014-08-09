@@ -261,8 +261,8 @@ public class User implements Identifiable {
 		String size = width + "x" + height;
 		if (photoUri == null) {
 			String digest = Digester.md5(email);
-			String robohash = "http://robohash.org/size_"+size+"/set_set1/bgset_any/"+digest+".png";
-			String gravatar = "http://www.gravatar.com/avatar/" + digest + ".png?r=PG&size=" + size;
+			String robohash = "//s3-eu-west-1.amazonaws.com/mysight/img/avatar.png";
+			String gravatar = "//www.gravatar.com/avatar/" + digest + ".png?r=PG&size=" + size;
 			try {
 				return gravatar + "&d=" + java.net.URLEncoder.encode(robohash, "UTF-8");
 			} catch (UnsupportedEncodingException e) {

@@ -29,7 +29,6 @@
 	
 	<script src="<c:url value="/js/deps/picker.js"/>"></script>
 	<script src="<c:url value="/js/deps/picker.date.js"/>"></script>
-	<script src="<c:url value="/js/deps/translations/pt_BR.js"/>"></script>
 	
 	<script src="<c:url value="/js/deps/prettify.js"/>"></script>
 	<script src="<c:url value="/js/deps/Markdown.Converter.js"/>"></script>

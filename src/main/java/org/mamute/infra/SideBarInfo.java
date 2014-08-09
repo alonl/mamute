@@ -21,7 +21,7 @@ public class SideBarInfo {
 
 	public void include(){
 		result.include("sidebarNews", newses.allVisibleAndApproved(5));
-		result.include("recentTags", tagsContainer.getRecentTagsUsage());
+		result.include("recentTags", tagsContainer.getRecentTagsUsage().subList(0, 6));
 		Set<Entry<String, RSSFeed>> entrySet = feedsMap.entrySet();
 		for (Entry<String, RSSFeed> entry : entrySet) {
 			result.include(entry.getKey(), entry.getValue());

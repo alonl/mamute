@@ -73,6 +73,12 @@ a.hover {
     width: 100%;
     left: 0;
 }
+.after-search {
+     position: absolute;
+     width: 100%;
+     left: 0;
+     margin-bottom: -1.8em;
+ }
 .second-header > * {
     line-height: 10px;
 }
@@ -154,9 +160,22 @@ body > .container {
     max-width: 90%;
     min-width: 1004px;
 }
+.after-search > .container {
+    max-width: 90%;
+    min-width: 1004px;
+}
+.after-search * {
+    color: #ffffff;
+}
 .after-search {
     background-color: #587d99;
     font-size: 20px;
     padding: 10px 0 10px 0;
-    color: #ffffff;
+}
+.after-search a {
+    text-decoration: underline;
+}
+
+header.container {
+    overflow: visible;
 }

@@ -15,7 +15,7 @@
 </div>
 <div class="image-and-information">
 	<img class="profile-image" src="${user.bigPhoto}"/>
-	<a href="https://br.gravatar.com/"><fmt:message key="user_profile.edit.photo" /></a>
+	<a target="_blank" href="http://en.gravatar.com/emails/"><fmt:message key="user_profile.edit.photo" /></a>
 </div>
 
 <form class="validated-form profile-edit-form" action="${linkTo[UserProfileController].editProfile(user)}" method="POST">

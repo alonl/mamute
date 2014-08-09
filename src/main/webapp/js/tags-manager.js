@@ -7,7 +7,7 @@
 			$(".autocompleted-tags").addClass("hidden");
 		});
 
-		$.getJSON(ALL_TAGS_URL, function(json){
+		$.getJSON(ALL_TAGS_URL + "/7", function(json){ // top 7
 			var allTags = json;
 
 			var element = $('.autocomplete');

@@ -106,7 +106,7 @@ public class ListController {
 	public void unsolved(Integer p) {
 		Integer page = getPage(p);
 		result.include("questions", questions.unsolvedVisible(page));
-		result.include("recentTags", recentTagsContainer.getRecentTagsUsage());
+		result.include("recentTags", recentTagsContainer.getRecentTagsUsage().subList(0, 6));
 		result.include("currentPage", page);
 		result.include("totalPages", questions.totalPagesUnsolvedVisible());
 	}
@@ -115,7 +115,7 @@ public class ListController {
 	public void unanswered(Integer p) {
 		Integer page = getPage(p);
 		result.include("questions", questions.unanswered(page));
-		result.include("recentTags", recentTagsContainer.getRecentTagsUsage());
+		result.include("recentTags", recentTagsContainer.getRecentTagsUsage().subList(0, 6));
 		result.include("currentPage", page);
 		result.include("totalPages", questions.totalPagesWithoutAnswers());
 		result.include("unansweredActive", true);
@@ -133,7 +133,7 @@ public class ListController {
 		List<Question> questionsWithTag = questions.withTagVisible(tag, page, semRespostas);
 		result.include("totalPages", questions.numberOfPages(tag));
 		result.include("tag", tag);
-		result.include("recentTags", recentTagsContainer.getRecentTagsUsage());
+		result.include("recentTags", recentTagsContainer.getRecentTagsUsage().subList(0, 6));
 		result.include("questions", questionsWithTag);
 		result.include("currentPage", page);
 		result.include("hasAbout", tags.hasAbout(tag));

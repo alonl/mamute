@@ -1813,7 +1813,7 @@
 				featherEditor.close();
 			},
 			
-			language: 'pt_BR'
+			language: 'en_US'
 		});
 		
     	var preview = document.getElementById('image-editor-preview');

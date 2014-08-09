@@ -100,4 +100,10 @@ public class TagDAO {
 		}
 		return existingTag;
 	}
+
+    @SuppressWarnings("unchecked")
+    public List<Tag> top(int top) {
+        Query query = session.createQuery("from Tag tag order by tag.usageCount desc").setMaxResults(top);
+        return query.list();
+    }
 }

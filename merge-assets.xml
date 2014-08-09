@@ -91,7 +91,6 @@
 		<concat fixlastline="yes" destfile="${webapp.target.dir}/js/jquery/jquery-plugins-${timestamp}.js">
 			<fileset file="${js.deps.dir}/picker.js"/>			
 			<fileset file="${js.deps.dir}/picker.date.js"/>		
-			<fileset file="${js.deps.dir}/translations/pt_BR.js"/>
 			<fileset file="${js.deps.dir}/jquery.validate.min.js"/>
 			<fileset file="${js.deps.dir}/jquery.joyride-2.0.3.js"/>
 			<fileset file="${js.deps.dir}/diff_match_patch.js"/>

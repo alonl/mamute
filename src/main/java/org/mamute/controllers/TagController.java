@@ -48,5 +48,9 @@ public class TagController {
 	public void jsonTags () {
 		result.use(json()).withoutRoot().from(tags.all()).serialize();
 	}
+
+    public void jsonTagsTop (Integer top) {
+        result.use(json()).withoutRoot().from(tags.top(top)).serialize();
+    }
 	
 }
