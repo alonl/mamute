@@ -29,7 +29,6 @@
 	<link rel="stylesheet" href="<c:url value="/css/deps/prettify.css"/>">
 	<link rel="stylesheet" href="<c:url value="/css/deps/joyride-2.0.3.css"/>">
 	<link rel="stylesheet" href="<c:url value="/css/mamute.css"/>">
-	<link rel="stylesheet" href="<c:url value="/css/responsive-mamute.css"/>">
 	<link rel="stylesheet" href="<c:url value="/css/deps/pickadate/classic.css"/>">
 	<link rel="stylesheet" href="<c:url value="/css/deps/pickadate/classic.date.css"/>">
 
