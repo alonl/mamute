@@ -68,6 +68,11 @@ a.hover {
     margin-bottom: 0;
     height: 28px;
 }
+.second-header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
 .second-header > * {
     line-height: 10px;
 }
@@ -142,6 +147,12 @@ title.item-title.main-thread-title.question-title {
 }
 body > .container {
     padding-bottom: 2em;
+    max-width: 90%;
+    min-width: 1004px;
+}
+.second-header > .container {
+    max-width: 90%;
+    min-width: 1004px;
 }
 .after-search {
     background-color: #587d99;

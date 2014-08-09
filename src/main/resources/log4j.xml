@@ -100,6 +100,10 @@
         <priority value="DEBUG"/>
         <appender-ref ref="main"/>
     </category>
+    <category name="com.mchange">
+        <priority value="INFO"/>
+        <appender-ref ref="main"/>
+    </category>
     <category name="br.com.caelum.vraptor.dash.uristats">
         <priority value="DEBUG"/>
         <appender-ref ref="stats"/>
