@@ -1,4 +1,4 @@
-Mamute QA
+Mysight QA
 ======
 
 ##How to set up an instance of mamute

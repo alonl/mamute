@@ -10,10 +10,7 @@ import org.mamute.components.RecentTagsContainer;
 import org.mamute.dao.NewsDAO;
 import org.mamute.dao.QuestionDAO;
 import org.mamute.dao.TagDAO;
-import org.mamute.model.LoggedUser;
-import org.mamute.model.News;
-import org.mamute.model.Question;
-import org.mamute.model.Tag;
+import org.mamute.model.*;
 
 import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Get;
@@ -106,7 +103,9 @@ public class ListController {
 	public void unsolved(Integer p) {
 		Integer page = getPage(p);
 		result.include("questions", questions.unsolvedVisible(page));
-		result.include("recentTags", recentTagsContainer.getRecentTagsUsage().subList(0, 6));
+        List<TagUsage> recentTagsUsage = recentTagsContainer.getRecentTagsUsage();
+        if (recentTagsUsage.size() > 6) recentTagsUsage = recentTagsUsage.subList(0, 6);
+		result.include("recentTags", recentTagsUsage);
 		result.include("currentPage", page);
 		result.include("totalPages", questions.totalPagesUnsolvedVisible());
 	}
@@ -115,7 +114,9 @@ public class ListController {
 	public void unanswered(Integer p) {
 		Integer page = getPage(p);
 		result.include("questions", questions.unanswered(page));
-		result.include("recentTags", recentTagsContainer.getRecentTagsUsage().subList(0, 6));
+        List<TagUsage> recentTagsUsage = recentTagsContainer.getRecentTagsUsage();
+        if (recentTagsUsage.size() > 6) recentTagsUsage = recentTagsUsage.subList(0, 6);
+		result.include("recentTags", recentTagsUsage);
 		result.include("currentPage", page);
 		result.include("totalPages", questions.totalPagesWithoutAnswers());
 		result.include("unansweredActive", true);
@@ -133,7 +134,9 @@ public class ListController {
 		List<Question> questionsWithTag = questions.withTagVisible(tag, page, semRespostas);
 		result.include("totalPages", questions.numberOfPages(tag));
 		result.include("tag", tag);
-		result.include("recentTags", recentTagsContainer.getRecentTagsUsage().subList(0, 6));
+        List<TagUsage> recentTagsUsage = recentTagsContainer.getRecentTagsUsage();
+        if (recentTagsUsage.size() > 6) recentTagsUsage = recentTagsUsage.subList(0, 6);
+		result.include("recentTags", recentTagsUsage);
 		result.include("questions", questionsWithTag);
 		result.include("currentPage", page);
 		result.include("hasAbout", tags.hasAbout(tag));

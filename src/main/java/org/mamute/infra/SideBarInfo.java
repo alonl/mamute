@@ -1,5 +1,6 @@
 package org.mamute.infra;
 
+import java.util.List;
 import java.util.Map.Entry;
 import java.util.Set;
 
@@ -11,6 +12,7 @@ import org.mamute.infra.rss.read.FeedsMap;
 import org.mamute.infra.rss.read.RSSFeed;
 
 import br.com.caelum.vraptor.Result;
+import org.mamute.model.TagUsage;
 
 public class SideBarInfo {
 
@@ -21,7 +23,9 @@ public class SideBarInfo {
 
 	public void include(){
 		result.include("sidebarNews", newses.allVisibleAndApproved(5));
-		result.include("recentTags", tagsContainer.getRecentTagsUsage().subList(0, 6));
+        List<TagUsage> recentTagsUsage = tagsContainer.getRecentTagsUsage();
+        if (recentTagsUsage.size() > 6) recentTagsUsage = recentTagsUsage.subList(0, 6);
+		result.include("recentTags", recentTagsUsage);
 		Set<Entry<String, RSSFeed>> entrySet = feedsMap.entrySet();
 		for (Entry<String, RSSFeed> entry : entrySet) {
 			result.include(entry.getKey(), entry.getValue());
